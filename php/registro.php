@@ -23,8 +23,13 @@ if (mysqli_num_rows($resultado) > 0) {
     exit();
 }
 //Insertar el usuario en la BD
+$clave = password_hash($clave, PASSWORD_DEFAULT);
+
 $insertar = "INSERT INTO usuario (Nombre, correo, contraseña, tipo) 
              VALUES ('$nombre', '$correo', '$clave', '$tipo')";
+//Cifrar al registrar
+
+ 
 
 if (mysqli_query($conexion, $insertar)) {
     header("Location: ../inicio sesion.html");

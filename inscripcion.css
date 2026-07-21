@@ -1,0 +1,108 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(to bottom right, #f2eafe, #e1e1fa, #f2fcff);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.pago-container {
+  display: flex;
+  width: 90%;
+  max-width: 1000px;
+ 
+  border-radius: 20px;
+  box-shadow: 0 0 20px rgba(0,0,0,0.1);
+  overflow: hidden;
+}
+
+.formulario,
+.resumen {
+  flex: 1;
+  padding: 40px;
+}
+
+.logo {
+  width: 120px;
+  margin-bottom: 20px;
+}
+
+h2 {
+  margin-bottom: 10px;
+  font-size: 22px;
+  color: #333;
+}
+
+.texto-secundario {
+  font-size: 14px;
+  color: #555;
+  margin-bottom: 30px;
+}
+
+input {
+  width: 100%;
+  padding: 12px 15px;
+  border: none;
+  border-radius: 25px;
+  background-color: #f1f1f1;
+  margin-bottom: 20px;
+  font-size: 16px;
+}
+
+button {
+  width: 108%;
+  padding: 11px;
+  border: none;
+  border-radius: 25px;
+  background-color: #638c02;
+  color: white;
+  font-size: 20px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+button:hover {
+  background-color: #83be04;
+}
+
+.resumen {
+  background-color: #faf7ff;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.logo-resumen {
+  width: 100px;
+  margin: 0 auto 20px;
+}
+
+.resumen h3 {
+  font-size: 20px;
+  color: #7e4ab3;
+  margin-bottom: 30px;
+}
+
+.precio span {
+  font-size: 16px;
+  color: #555;
+}
+
+.precio strong {
+  display: block;
+  font-size: 24px;
+  color: #000;
+  margin-top: 5px;
+}
+
+.cupon a {
+  display: inline-block;
+  margin-top: 30px;
+  color: #a44ccf;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 15px;
+}

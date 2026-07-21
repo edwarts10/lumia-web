@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro</title>
+  <link rel="stylesheet" href="styles.css">
+
+</head>
+<body>
+    <div class="form-container">
+        <h2>Registro estudiante</h2>
+
+       <form action="php/registro.php" method="post">
+    <div class="grid">
+        <input type="text" name="nombre" placeholder="Nombre" required>
+        <input type="text" name="apellido" placeholder="Apellidos" required>
+        <input type="email" name="correo" placeholder="Correo electrónico" required>
+        <input type="text" name="telefono" placeholder="teléfono">
+        <input type="password" name="clave" placeholder="Contraseña" required>
+        <input type="password" name="confirmar" placeholder="confirmar contraseña" required>
+
+        <select name="tipo" required>
+            <option value="estudiante">Estudiante</option>
+            <option value="profesor">Profesor</option>
+        </select>
+    </div>
+
+    <button type="submit">Registrarse</button>
+</form>
+    <div class="estras">
+        <a href="index.html">¿Ya tienes cuenta? <span>Iniciar sesión</span></a>
+    </div>
+    </div>
+</body>
+</html>

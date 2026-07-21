@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cursos - Lumia</title>
+  <link rel="stylesheet" href="cursos.css" />
+  
+</head>
+<body>
+
+  <!-- ENCABEZADO -->
+   <header class="navbar">
+  <img src="logo limua color.png" alt="Logo Lumia" class="logo" />
+  <nav class="nav-menu">
+    <a href="index.html">Inicio</a>
+      <a href="cursos.html" class="activo">Cursos</a>
+    <a href="#">Comunidad</a> 
+    <a href="#">Contacto</a>
+    <a href="inicio sesion.html">Entrar</a>
+  </nav>
+</header>
+
+
+  <!-- SECCIÓN DESTACADA -->
+  <section class="destacado">
+    <div class="texto">
+      <h2>¿TIENES TALENTO?<br>CONOCE LA OPORTUNIDAD</h2>
+      <p><strong>¿Estás listo para transformar tu vida profesional?</strong></p>
+     <p class="texto-justificado">
+  En un mundo que cambia a toda velocidad, la preparación marca la diferencia.
+  Nuestros cursos están diseñados para llevarte del conocimiento básico a la excelencia profesional, 
+  con herramientas actualizadas, mentoría de expertos y acceso a una comunidad de alto nivel.
+</p>
+    </div>
+    <div class="imagen">
+      <img src="mujer con computador_Mesa de trabajo 1.png" alt="Estudiante feliz" />
+     
+    </div>
+  </section>
+
+  <!-- CURSOS -->
+  <section class="cursos">
+    <h2 class="titulo-cursos">Elige tu curso y da el primer paso hacia el éxito</h2>
+    <div class="tarjetas-cursos">
+      <!-- Curso 1 -->
+      <div class="tarjeta-curso">
+        <h4>Introducción a la <span>Programación</span></h4>
+        <ul>
+          <li>Aprende desde cero los fundamentos que todo programador necesita.</li>
+          <li>Ideal para quienes nunca han programado o quieren reforzar sus bases.</li>
+          <li>Incluye ejercicios prácticos, mini proyectos y acceso a comunidad.</li>
+        </ul>
+        <p>⏱️ Duración: 4 semanas (aprox. 12 horas)</p>
+        <p>📜 Incluye certificado</p>
+          <div class="precio"onclick="ComprarCurso('Programación', 60000)">$60.000 COP</div>
+      </div>
+
+      <!-- Curso 2 -->
+   <div class="tarjeta-curso">
+  <h4><span>Desarrollo</span> Web</h4>
+  <ul>
+    <li>Aprende HTML, CSS y JavaScript de forma clara y moderna.</li>
+    <li>Construye tu primer sitio web desde cero y publícalo online.</li>
+    <li>Con guía paso a paso + recursos descargables.</li>
+  </ul>
+  <p>⏱️ Duración: 5 semanas (aprox. 15 horas)</p>
+  <p>📜 Incluye certificado</p>
+  <button onclick="seleccionarCurso('Desarrollo Web', 80000)" class="btn-precio">$80.000 COP</button>
+</div>
+
+      <!-- Curso 3 -->
+      <div class="tarjeta-curso">
+        <h4>UX/<span>UI</span></h4>
+        <ul>
+          <li>Domina los principios del diseño centrado en el usuario.</li>
+          <li>Aprende Figma, wireframes, prototipos y diseño visual.</li>
+          <li>Perfecto para diseñadores, marketers y desarrolladores.</li>
+        </ul>
+        <p>⏱️ Duración: 4 semanas (aprox. 14 horas)</p>
+        <p>📜 Incluye certificado y brief descargable</p>
+        <div class="precio"onclick="ComprarCurso('UX/IU', 80000)">$80.000 COP</div>
+      
+      </div>
+    </div>
+  </section>
+
+  
+ 
+  <footer class="footer">
+  <div class="footer-content">
+    
+    <div class="footer-brand">
+        <div class="footer-brand">
+  <img src="logo limua color.png" alt="Elumia" style="height: 40px;"> 
+    </div>
+      <span>©2025 Lumia. Todos los derechos reservados.</span>
+    </div>
+    <ul class="footer-links">
+      <li><a href="#">Condiciones de uso</a></li>
+      <li><a href="#">Política de privacidad</a></li>
+      <li><a href="#">Política de cookies</a></li>
+      <li><a href="#">Declaraciones de accesibilidad</a></li>
+    </ul>
+    
+    <div class="social-icons">
+      <a href="#"><img src="img/whatsapp-icon.svg" alt="WhatsApp" /></a>
+      <a href="#"><img src="img/instagram-icon.svg" alt="Instagram" /></a>
+      <a href="#"><img src="img/facebook-icon.svg" alt="Facebook" /></a>
+      <a href="#"><img src="img/youtube-icon.svg" alt="YouTube" /></a>
+      <a href="#"><img src="img/twitter-icon.svg" alt="Twitter" /></a>
+    </div>
+    
+
+    </div>
+  </footer>
+
+  <script src="js/login.js"></script>
+  <script>
+  function seleccionarCurso(nombre, precio) {
+    const curso = { nombre, precio };
+    localStorage.setItem("cursoSeleccionado", JSON.stringify(curso));
+    window.location.href = "inscripcion.html"; // llevar a la página de nombre y correo
+  }
+</script>
+  
+</body>
+</html>

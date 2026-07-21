@@ -1,0 +1,95 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    font-family:Arial, Helvetica, sans-serif;
+    background-image:url("still-life-books-versus-technology.jpg"); 
+    background-size: cover;
+  padding: 40px;
+
+    
+}
+.form-container{
+    max-width: 500px;
+    margin:30px auto;
+    background: #D7E5E6;
+    border-radius:20px;
+    padding:30px;
+    box-shadow:  #D7E5E6;
+    
+}
+.form-container h2 {
+  text-align: center;
+  color:#4b0053;
+  margin-bottom: 10px;
+ 
+
+}
+
+.text-center{
+  text-align: center;
+  color:#4b0053;
+  font-size: 10px;
+  margin-bottom:10px;
+
+}
+input[type="text"],
+input[type="firt name"],
+input[type="last name"],
+input[type="email"],
+input[type="Phone number"],
+input[type="password"],
+input[type="confirm password"]{
+
+
+  width: 100%;
+  padding: 12px;
+  margin: 10px 0;
+border:none;
+border-radius: 20px;
+background: white;
+box-shadow:  #D7E5E6;
+font-size: 10px;
+
+}
+button{
+width: 100%;
+padding: 12px;
+background: #02b61a;
+color: #D7E5E6;
+border: 20px;
+border-radius: 20px;
+cursor:pointer;
+font-weight: bold;
+margin-top: 15px;
+}
+
+.grid{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+
+}
+
+.estras{
+  display: flex;
+  justify-content: none;
+  margin-top: 15px;
+  font-size: 12px;
+}
+
+.estras a {
+  color: #4b0053;
+  text-decoration: none;
+
+}
+.estras a span{
+  font-weight: bold;
+  color: #1f0331;
+}
+label {
+  color: #340450; 
+  font-weight: bold; 
+  display: block;   
+  margin-bottom: 5px;
+  }

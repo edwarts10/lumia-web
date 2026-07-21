@@ -1,0 +1,81 @@
+
+
+.main-content-recuperacion {
+    flex-grow: 1;
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    padding: 2rem;
+    box-sizing: border-box;
+    
+}
+/* cuadro instruciones
+ */
+.recovery-card {
+    background: #FFFFFF; 
+    color: #a00505; 
+    padding: 3rem; 
+    border-radius: 20px; 
+    width: 100%;
+    max-width: 500px; 
+    box-shadow: 0 8px 25px rgba(185, 81, 81, 0.2); 
+    text-align: center; 
+}
+
+.recovery-title {
+    font-size: 1rem;
+    color: #4A148C; 
+    margin-bottom: 1.5rem;
+    font-weight: bolder;
+}
+
+
+.recovery-message {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    margin-bottom: 2rem;
+    color: #555; 
+}
+/*  botón restablecer */
+.reset-button {
+    display: inline-block;
+    background: #467405; 
+    border: none;
+    padding: 0.8rem 2rem; 
+    border-radius: 10px;
+    color: #fff;
+    font-weight: bold;
+    text-decoration: none; 
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.reset-button:hover {
+    background-color: #7ab237; 
+}
+
+
+@media (max-width: 768px) {
+    .main-content-recuperacion {
+        padding: 1rem;
+    }
+
+    .recovery-card {
+        padding: 2rem 1.5rem;
+        border-radius: 15px;
+    }
+
+    .recovery-title {
+        font-size: 1.5rem;
+    }
+
+    .recovery-message {
+        font-size: 1rem;
+    }
+
+    .reset-button {
+        padding: 0.7rem 1.5rem;
+    }
+}
+

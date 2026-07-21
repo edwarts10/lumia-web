@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>iniciar sesión</title>
+    <link rel="stylesheet"href ="styles.css">
+</head>
+<body>
+    <div class="form-container">
+        <h2> Cambio contraseña</h2>
+        
+       <form  action="#" method="POST">
+        <label for="usuario"><Nav></Nav>Nueva contraseña</label>
+            <input type="password"id="usuario"placeholder= "Nueva contraseña">
+
+            <label for="contraseña">Confirmar Contraseña</label>
+            <input type="password"id="contraseña"placeholder="ingresar contraseña">
+
+            <button type="submit">Restablecer contraseña</button>
+
+           
+        </form>
+        
+    </div>
+    <script>/* Script que muestra una alerta al enviar el formulario*/
+        document.addEventListener("DOMContentLoaded", function () {
+          const form = document.querySelector("form");
+    
+          form.addEventListener("submit", function (event) {
+            event.preventDefault(); 
+            alert("Formulario enviado correctamente");
+            
+          });
+        });
+      </script>
+    </body>
+    </html>

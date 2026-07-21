@@ -1,0 +1,70 @@
+body {
+  font-family: Arial, sans-serif;
+  background: linear-gradient(135deg, #f3e8ff, #fce7f3);
+  margin: 0;
+  padding: 20px;
+}
+
+h1, h2 {
+  color: #4a148c;
+}
+
+.lista-concursos,
+.lista-proyectos {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.tarjeta-concurso,
+.tarjeta-proyecto {
+  background: white;
+  border-radius: 15px;
+  padding: 15px;
+  width: 250px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.estado-badge {
+  background: #22c55e;
+  color: white;
+  padding: 4px 10px;
+  border-radius: 20px;
+  font-size: 12px;
+  display: inline-block;
+  margin-bottom: 10px;
+}
+
+.categoria {
+  color: #8f0473;
+  font-weight: bold;
+}
+
+.tarjeta-concurso button {
+  background: #22c55e;
+  color: white;
+  border: none;
+  padding: 8px 20px;
+  border-radius: 20px;
+  cursor: pointer;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+input[type="text"] {
+  padding: 10px;
+  border-radius: 20px;
+  border: 1px solid #ccc;
+  width: 250px;
+  margin-right: 10px;
+}
+
+button {
+  padding: 10px 20px;
+  border-radius: 20px;
+  border: none;
+  background: #8f0473;
+  color: white;
+  cursor: pointer;
+  font-weight: bold;
+}

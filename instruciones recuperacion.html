@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Instrucciones para restablecer tu contraseña- Lumia</title>
+    <link rel="stylesheet" href="inicio.css"> <link rel="stylesheet" href="instruciones recuperacion.css"> </head>
+<body>
+    <header class="navbar">
+        <img src="logo lumia blanco.png" alt="Logo Lumia" class="logo" />
+        <nav class="nav-menu">
+            <a href="index.html">Inicio</a>
+            <a href="#">Cursos</a>
+            <a href="#">Comunidad</a>
+            <a href="#">Contacto</a>
+            <a href="inicio sesion.html">Entrar</a>
+        </nav>
+    </header>
+
+    <main class="main-content-recuperacion">
+        <div class="recovery-card">
+            <h2 class="recovery-title">Instrucciones para restablecer tu contraseña</h2>
+            <div class="email-sent-icon">
+                </div>
+            <p class="recovery-message">
+                Hola, hemos recibido una solicitud para restablecer tu contraseña.
+                Haz clic en el botón de abajo para elegir una nueva contraseña.
+            </p>
+            <a href="nueva-contrasena.html" class="reset-button">Restablecer contraseña</a>
+        </div>
+    </main>
+
+ <script>/* Script que muestra una alerta al enviar el formulario*/
+        document.addEventListener("DOMContentLoaded", function () {
+          const form = document.querySelector("form");
+    
+          form.addEventListener("submit", function (event) {
+            event.preventDefault(); 
+            alert("Formulario enviado correctamente");
+            
+          });
+        });
+      </script>
+
+    </body>
+</html>

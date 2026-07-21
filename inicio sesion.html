@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>iniciar sesión</title>
+    <link rel="stylesheet"href ="styles.css">
+</head>
+<body>
+    <div class="form-container">
+        <h2> Iniciar Sesión</h2>
+        
+       <form action="php/login.php" method="POST">
+    <label for="usuario">Usuario</label>
+    <input type="email" name="email" id="usuario" placeholder="ingresar usuario" required>
+
+    <label for="contraseña">Contraseña</label>
+    <input type="password" name="clave" id="contraseña" placeholder="ingresar contraseña" required>
+
+    <button type="submit">Iniciar Sección</button>
+
+    <div class="estras">
+        <a href="registro.html">¿es nuevo estudiante? <span>resgistrarse</span></a>
+        <a href="recuperacion de contraseña.html">¿olvido contraseña</a>
+    </div>
+</form>
+        
+    </div>
+    <!-- <script src="js/login.js"></script> -->
+    
+    </body>
+    </html>

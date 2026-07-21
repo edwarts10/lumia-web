@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pago Curso Programación - Lumia</title>
+  <link rel="stylesheet" href="inscripcion.css" />
+</head>
+<body style="background-image: url('fondo\ lumia\ 2-02.png'); background-size: cover; background-position: center;">
+  <div class="pago-container">
+    <!--  formulario -->
+    <div class="formulario">
+      <img src="logo limua color.png" alt="Logo Lumia" class="logo">
+      <h2>Escribe tu nombre y correo electrónico</h2>
+      <p class="texto-secundario">Tu pago quedará asociado a este correo. Al completar la compra te pediremos crear una cuenta o iniciar sesión.</p>
+      <form id="formPago">
+        <input type="text" id="nombre" placeholder="Nombre Completo" required>
+        <input type="email" id="correo" placeholder="Correo electrónico" required>
+        <button type="submit">Continuar</button>
+      </form>
+    </div>
+
+    <!--  información curso -->
+    <div class="resumen">
+      <img src="logo limua color.png" alt="Logo Lumia" class="logo-resumen">
+      <h3>Pago del curso</h3>
+      <div class="precio">
+        <span>Total a pagar</span>
+        <strong>$80.000 COP</strong>
+      </div>
+      <div class="cupon">
+        <a href="#">¿Tienes un cupón?</a>
+      </div>
+    </div>
+  </div>
+ <!-- <script>
+    //  envío del formulario
+    document.getElementById("formPago").addEventListener("submit", function(event) {
+      event.preventDefault();
+      const nombre = document.getElementById("nombre").value;
+      const correo = document.getElementById("correo").value;
+
+      // Guardar en localStorage
+      localStorage.setItem("usuarioNombre", nombre);
+      localStorage.setItem("usuarioCorreo", correo);
+
+      // Redirigir a la página de pago
+      window.location.href = "pago.html";
+    });
+  </script>-->
+<script>
+  document.getElementById("formPago").addEventListener("submit", function(event) {
+    event.preventDefault();
+    
+    const nombre = document.getElementById("nombre").value;
+    const correo = document.getElementById("correo").value;
+
+    // Recuperar el curso seleccionado previamente
+    let curso = JSON.parse(localStorage.getItem("cursoSeleccionado"));
+    if (!curso) {
+      alert("No se ha seleccionado ningún curso. Por favor, vuelve a la página de cursos.");
+      window.location.href = "cursos.html";
+      return;
+    }
+
+    // Agregar los datos del usuario  del curso
+    curso.nombre = nombre;
+    curso.correo = correo;
+
+    // Guardar todo en localStorage nuevamente
+    localStorage.setItem("cursoSeleccionado", JSON.stringify(curso));
+
+    // Redirigir a la página de pago
+    window.location.href = "pago.html"; 
+  });
+</script>
+
+</body>
+</html>

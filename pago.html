@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Pago del curso - Lumia</title>
+  <link rel="stylesheet" href="pago.css" />
+</head>
+<body><body style="background-image: url('fondo\ lumia\ 2-02.png'); background-size: cover; background-position: center;"></body>
+  <div class="pago-final">
+    <img src="logo limua color.png" alt="Logo Lumia" class="logo" />
+    <h2>Pago del curso</h2>
+
+    <p><strong>Curso seleccionado</strong></p>
+    <div class="fila">
+      <span id="curso-nombre">Desarrollo web</span>
+      <a href="cursos.html" class="cambiar-link">Cambiar</a>
+    </div>
+
+    <div class="subrayado"></div>
+
+    <p><strong>Información de pago</strong></p>
+    <div class="input-grupo">
+      <input type="text" placeholder="Nombre en la tarjeta" required />
+      <input type="text" placeholder="Número de tarjeta" required />
+      <input type="text" placeholder="MM / AA" required />
+      <input type="text" placeholder="CVC" required />
+    </div>
+
+    <p style="color: #999;">País o Región</p>
+
+    <p><strong class="resumen">Resumen del pedido</strong></p>
+    <div class="fila">
+      <span id="resumen-nombre">Desarrollo web</span>
+      <span id="resumen-precio">$80.000 COP</span>
+    </div>
+
+    <div class="subrayado"></div>
+
+    <div class="fila">
+      <span><strong>Total</strong></span>
+      <span><strong id="total-precio">$80.000 COP</strong></span>
+    </div>
+
+    <button class="boton-pagar" onclick="finalizarPago()">Pagar</button>
+  </div>
+
+  <script src="pago.js"></script>
+</body>
+</html>

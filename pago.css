@@ -1,0 +1,120 @@
+/* Fondo general */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(135deg, #d7d3f6, #fad9f2);
+  background-size: cover;
+  background-position: center;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Contenedor principal */
+.pago-final {
+  background: rgba(255, 255, 255, 0.8);
+  backdrop-filter: blur(20px);
+  border-radius: 20px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  padding: 30px;
+  width: 380px;
+  max-width: 90%;
+  color: #3c006b;
+  text-align: left;
+  position: relative;
+}
+
+
+.logo {
+  width: 120px;
+  margin-bottom: 10px;
+}
+
+/* Título */
+.pago-final h2 {
+  color: #4a006e;
+  font-size: 22px;
+  margin-bottom: 20px;
+}
+
+/* Etiqueta */
+.pago-final p {
+  margin: 10px 0 4px;
+  font-size: 15px;
+}
+
+/* Subrayado separador */
+.subrayado {
+  border-bottom: 1px solid #bbb;
+  margin: 15px 0;
+}
+
+/* Link Cambiar */
+.cambiar-link {
+  color: #0077ff;
+  font-size: 14px;
+  text-decoration: none;
+}
+
+.cambiar-link:hover {
+  text-decoration: underline;
+}
+
+
+.input-grupo {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+  margin-bottom: 10px;
+}
+
+
+.input-grupo input {
+  padding: 10px 14px;
+  border-radius: 20px;
+  border: none;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  background-color: white;
+  font-size: 14px;
+}
+
+/* Fila para nombre + cambiar o resumen + precio */
+.fila {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 15px;
+  margin: 8px 0;
+}
+
+/* Precio */
+.fila span:last-child {
+  color: #4a006e;
+  font-weight: bold;
+}
+
+/* Botón Pagar */
+.boton-pagar {
+  width: 100%;
+  background-color: #688a03;
+  color: white;
+  font-size: 16px;
+  padding: 12px;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  margin-top: 20px;
+  transition: background-color 0.3s ease;
+}
+
+.boton-pagar:hover {
+  background-color: #7faa0a;
+}
+
+
+.resumen {
+  color: #6e008c;
+  font-weight: bold;
+}

@@ -77,25 +77,29 @@ body {
 
 .main-container {
   display: flex;
-  justify-content: flex-end;
+  justify-content: space-between;
   align-items: center;
   height: 90vh;
-  padding: 2rem;
+  padding: 2rem 4rem;
+  position: relative;
 }
 
  .hero-text {
-  position: absolute;
-  bottom: 40px; 
-  left: 40px;   
+    
   color: #fff;
-  font-size: 2rem;
+  font-size: 3.5rem;
   font-weight: bold;
   text-shadow: 2px 2px 7px rgba(0, 0, 0, 0.6);
-  max-width: 300px;
+  max-width: 500px;
   z-index: 2;
 
 }
 
+.hero-text h1 {
+  margin: 0;
+  font-size: inherit;
+  line-height: 1.2;
+}
 .login-card {
   background: #f1f5f9;
   color: #6b0c81;

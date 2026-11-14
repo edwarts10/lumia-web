@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contacto - Lumia</title>
+  <link rel="stylesheet" href="inicio.css" />
+  <link rel="stylesheet" href="contacto.css" />
+</head>
+<body>  
+    <!-- menu superior -->
+    <header class="navbar">
+      <img src="logo lumia blanco.png" alt="Logo Lumia" class="logo" />
+      <nav class="nav-menu">
+        <a href="index.html">Inicio</a>
+        <a href="cursos.html">Cursos</a>
+        <a href="http://localhost:5173/">Comunidad</a>
+        <a href="contacto.html" class="activo">Contacto</a>
+        <a href="inicio sesion.html">Entrar</a>
+      </nav>
+    </header>
+    <!-- contenido contacto -->
+    <main class="contacto">
+      <h2>Contáctanos</h2>
+      <p>Si tienes preguntas sobre los cursos, los pagos o sobre tu cuenta, también puedes enviar sugerencias o reportar problemas con la plataforma, escribiéndonos y te responderemos lo antes posible.</p>
+      <div class="contacto-grid">
+    <!-- datos de contacto -->
+      <div class="contacto-datos">
+      <p><strong>Correo</strong><br><a href="mailto:edwartsena@gmail.com">edwartsena@gmail.com</a></p>
+        <p><strong>WhatsApp</strong><br><a href="https://wa.me/573001234567" target="_blank">+57 300 123 4567</a></p>
+<p><strong> Horario de atención:</strong><br>lunes a viernes, 9:00 AM - 5:00 PM</p>
+
+<!-- formulario de contacto -->
+      <form class="contacto-form" action="mailto:edwartsena@gmail.com" method="POST" enctype="text/plain">
+     <input type="text" name="nombre" name="nombre" placeholder="Nombre completo" required />
+        <input type="email" name="correo" placeholder="Correo electrónico" required />
+        <textarea name="mensaje" rows="5" placeholder="Escribe tu mensaje" required></textarea>
+        <button type="submit">Enviar mensaje</button>
+        </form>     
+    </div>
+    </main>
+</body>
+</html>
+
+   

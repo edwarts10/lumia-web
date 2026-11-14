@@ -1,0 +1,195 @@
+@font-face {
+  font-family: 'Capitana';
+  src: url('fonts/Capitana Thin Italic.ttf') format('truetype');
+  font-weight: 100;
+  font-style: italic;
+}
+ 
+@font-face {
+  font-family: 'Capitana';
+  src: url('fonts/Capitana Thin.ttf') format('truetype');
+  font-weight: 100;
+  font-style: normal;
+}
+ 
+@font-face {
+  font-family: 'Capitana';
+  src: url('fonts/Capitana Extralight.ttf') format('truetype');
+  font-weight: 200;
+  font-style: normal;
+}
+ 
+@font-face {
+  font-family: 'Capitana';
+  src: url('fonts/Capitana Extralight Italic.ttf') format('truetype');
+  font-weight: 200;
+  font-style: italic;
+}
+ 
+@font-face {
+  font-family: 'Capitana';
+  src: url('fonts/Capitana Light.ttf') format('truetype');
+  font-weight: 300;
+  font-style: normal;
+}
+ 
+@font-face {
+  font-family: 'Capitana';
+  src: url('fonts/Capitana Light Italic.ttf') format('truetype');
+  font-weight: 300;
+  font-style: italic;
+}
+ 
+@font-face {
+  font-family: 'Capitana';
+  src: url('fonts/Capitana Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+ 
+@font-face {
+  font-family: 'Capitana';
+  src: url('fonts/Capitana Italic.ttf') format('truetype');
+  font-weight: 400;
+  font-style: italic;
+}
+ 
+@font-face {
+  font-family: 'Capitana';
+  src: url('fonts/Capitana Medium.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+}
+ 
+@font-face {
+  font-family: 'Capitana';
+  src: url('fonts/Capitana Medium Italic.ttf') format('truetype');
+  font-weight: 500;
+  font-style: italic;
+}
+ 
+@font-face {
+  font-family: 'Capitana';
+  src: url('fonts/Capitana Semibold.ttf') format('truetype');
+  font-weight: 600;
+  font-style: normal;
+}
+ 
+@font-face {
+  font-family: 'Capitana';
+  src: url('fonts/Capitana Semibold Italic.ttf') format('truetype');
+  font-weight: 600;
+  font-style: italic;
+}
+ 
+@font-face {
+  font-family: 'Capitana';
+  src: url('fonts/Capitana Bold.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+}
+ 
+@font-face {
+  font-family: 'Capitana';
+  src: url('fonts/Capitana Bold Italic.ttf') format('truetype');
+  font-weight: 700;
+  font-style: italic;
+}
+ 
+@font-face {
+  font-family: 'Capitana';
+  src: url('fonts/Capitana Extrabold.ttf') format('truetype');
+  font-weight: 800;
+  font-style: normal;
+}
+ 
+@font-face {
+  font-family: 'Capitana';
+  src: url('fonts/Capitana Extrabold Italic.ttf') format('truetype');
+  font-weight: 800;
+  font-style: italic;
+}
+ 
+@font-face {
+  font-family: 'Capitana';
+  src: url('fonts/Capitana Black.ttf') format('truetype');
+  font-weight: 900;
+  font-style: normal;
+}
+ 
+@font-face {
+  font-family: 'Capitana';
+  src: url('fonts/Capitana Black Italic.ttf') format('truetype');
+  font-weight: 900;
+  font-style: italic;
+}
+ 
+body{
+    margin: 0;
+    padding: 0;
+    font-family:'Capitana', sans-serif;
+    background:linear-gradient(135deg,#d7d3f6, #fad9f2);
+    min-height: 100vh;
+}
+
+.acceso-header{
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    padding: 20px 40px;
+    background: rgba(255, 255, 255, 0.6);
+
+}
+.acceso-header .logo {
+    width: 100px;
+}
+.acceso-header h2 {
+    color: #4a006e; 
+    margin: 0;
+
+}
+.contenido-curso{
+    max-width:700px;
+    margin: 30px auto;
+    background: rgba(255, 255, 255, 0.85);
+    backdrop-filter: blur(20px);
+border-radius: 20px;
+box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+padding: 30px;
+color:#3c006b ;
+}
+.contenido-curso h3 {
+    margin: 0;
+
+}
+.aviso{
+    background: #fff3cd ;
+    color:#6e5300 ;
+    border-radius: 10px;
+    padding: 12px 16px;
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+.lista-modulos{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+
+}
+.lista-modulos li {
+    background: white;
+    border-radius: 12px;
+    padding: 14px 18px;
+    margin-bottom: 12px;
+    box-shadow:0 2px 6px rgba(0,0,0,0.08 );
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+
+}
+.lista-modulos li span.estado {
+    font-size: 18px;
+    color:#688a03;
+    font-weight:bold;
+}

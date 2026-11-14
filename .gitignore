@@ -1,2 +1,4 @@
 node_modules/
-   comunidad-react/node_modules/
+vendor/
+*.zip
+comunidad-react/src/App-1.css

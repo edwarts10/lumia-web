@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mi curso - Lumia</title>
+  <link rel="stylesheet" href="acceso curso.css" />
+</head>
+<body>
+    <header class="acceso-header">
+        <img src="logo limua color.png" alt="logo lumia" class="logo"/>
+        <h2 id="nombre-curso">Curso</h2>
+    </header>
+    
+  <main class="contenido-curso">
+    <p id="bienvenida">¡Bienvenido/a! Ya tienes acceso a tu curso.</p>
+
+<div class="aviso">
+      Esta es una vista de ejemplo del contenido del curso. Los módulos que se listan abajo son
+      un marcador de posición: para mostrar los módulos reales habría que traerlos desde la
+      tabla <code>modulo</code> de la base de datos (con un endpoint PHP tipo
+      <code>listar_modulos.php?curso=...</code>), en lugar de mostrarlos fijos aquí.
+    </div>
+    <h3>Módulos del curso</h3>
+    <ul class="lista-modulos">
+        <li>Módulo 1 - instroducion <span class="estado">Disponible</span> </li>
+         <li>Módulo 2 - Contenido principal <span class="estado">Disponible</span> </li>
+          <li>Módulo 3 - Evaluacion final <span class="estado">Disponible</span> </li>
+
+    </ul>
+
+</main>
+<script src="acceso curso.js"></script>
+</body>
+</html>

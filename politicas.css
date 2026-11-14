@@ -1,0 +1,22 @@
+/*caja donde van los textos*/
+.politicas{
+    max-width: 850px;
+    margin: 2rem auto;
+    padding: 2rem 3rem;
+    background:rgba(255, 255, 255, 0.95);
+    border-radius: 20px;
+    color: #333;
+    line-height: 1.6;
+} 
+/*titulos de cada politica*/
+.politicas h2 {
+    color: #5d3f6a;
+border-bottom: 2px solid #e0d4ea;
+padding-bottom: 0.5rem;
+margin-top: 2rem;
+}
+
+/*quita el espacio de aerriba del primer titulo*/
+.politicas section:first-child h2 {
+    margin-top: 0;
+}

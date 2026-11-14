@@ -17,7 +17,9 @@ function finalizarPago() {
     headers: { "Content-Type": "application/json" },
     body: JSON.stringify({
       curso: curso.nombre,
-      precio: curso.precio
+      precio: curso.precio,
+      nombre:curso.estudianteNombre,
+      correo: curso.correo
     })
   })
     .then(respuesta => respuesta.json())

@@ -54,6 +54,7 @@ CREATE TABLE modulo (
     nombre VARCHAR(100) NOT NULL,
     contenido TEXT default NULL,
     id_curso INT (11) default NULL,
+    video     VARCHAR(255) DEFAULT NULL,
     PRIMARY KEY (id_modulo),
     FOREIGN KEY (id_curso) REFERENCES curso(id_curso)
 )ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;

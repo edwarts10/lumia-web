@@ -194,3 +194,59 @@ color:#3c006b ;
     border-radius: 10px;
 }
 
+/* cada pregunta como tarjeta */
+.pregunta {
+    background: white;
+    border-radius: 12px;
+    padding: 14px 18px;
+    margin-bottom: 12px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+}
+
+.pregunta p {
+    margin: 0 0 8px;
+    font-weight: bold;
+}
+
+/* una opción debajo de la otra */
+.pregunta label {
+    display: block;
+    margin: 6px 0;
+    cursor: pointer;
+}
+
+/* botón calificar */
+#btn-calificar,
+#btn-presentar  {
+    background: #6b0f5f;
+    color: white;
+    border: none;
+    padding: 12px 30px;
+    border-radius: 25px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+/* nota final */
+#resultado {
+    font-size: 18px;
+    font-weight: bold;
+}
+/* menú del curso a la derecha */
+.menu-curso {
+    margin-left: auto;
+    display: flex;
+    gap: 10px;
+}
+
+.menu-curso a {
+    text-decoration: none;
+    color: #4a006e;
+    font-weight: bold;
+    padding: 8px 16px;
+    border-radius: 20px;
+}
+
+.menu-curso a:hover {
+    background: rgba(107, 15, 95, 0.1);
+}

@@ -4,12 +4,17 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Mi curso - Lumia</title>
-  <link rel="stylesheet" href="acceso curso.css" />
+  <link rel="stylesheet" href="acceso curso.css?v=3" />
 </head>
 <body>
     <header class="acceso-header">
         <img src="logo limua color.png" alt="logo lumia" class="logo"/>
         <h2 id="nombre-curso">Curso</h2>
+                <nav class="menu-curso">
+            <a href="index.html">Inicio</a>
+            <a href="cursos.html">Cursos</a>
+            <a href="http://localhost:5173/">Comunidad</a>
+        </nav>
     </header>
     
   <main class="contenido-curso">
@@ -18,6 +23,14 @@
 
     <h3>Módulos del curso</h3>
     <ul class="lista-modulos" id="lista-modulos"></ul>
+ <button type="button" id="btn-presentar">Presentar evaluación</button>
+
+    <section id="seccion-evaluacion" hidden>
+    <h3>Evaluación final</h3>
+    <form id ="evaluacion"></form>
+    <button type ="button" id="btn-calificar">Calificar</button>
+    <p id="resultado"></p>
+    </section>
 
 </main>
 <script src="acceso curso.js"></script>
